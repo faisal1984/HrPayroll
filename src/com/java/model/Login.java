@@ -28,9 +28,7 @@ public class Login {
 		this.password = password;
 	}
 	
-	public void compare(){
-		
-	}
+	
 	
 	
 
