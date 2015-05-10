@@ -1,9 +1,20 @@
-package com.java.model;
+package com.hrpayroll.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Login {
 	
-	
+	@Id
+	@Column
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	String userid;
+	
+	@Column
 	String password;
 	
 	public Login(String userid, String password) {
